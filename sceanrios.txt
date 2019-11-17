@@ -1,0 +1,43 @@
+ name: 'Privacy Policy Inspection'
+  category: 'Security through Obscurity'
+  description: 'Prove that you actually read our privacy policy.'
+  difficulty: 3
+  hint: 'Only by visiting a special URL you can confirm that you read it carefully.'
+  hintUrl: 'https://pwning.owasp-juice.shop/part2/security-through-obscurity.html#prove-that-you-actually-read-our-privacy-policy'
+  key: privacyPolicyProofChallenge 
+
+name: 'Bjoern''s Favorite Pet'-- forgot password
+  category: 'Broken Authentication'
+  description: 'Reset the password of Bjoern''s OWASP account via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+  difficulty: 3
+  hint: 'He might have spoilered it on at least one occasion where a camera was running. Maybe elsewhere as well.'
+  hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#reset-the-password-of-bjoerns-owasp-account-via-the-forgot-password-mechanism'
+  key: resetPasswordBjoernOwaspChallenge
+
+
+  name: 'GDPR Data Erasure'  -login 
+  category: 'Broken Authentication'
+  description: 'Log in with Chris'' erased user account.'
+  difficulty: 3
+  hint: 'Turns out that something is technically and legally wrong with the implementation of the "right to be forgotten" for users.'
+  hintUrl: 'https://pwning.owasp-juice.shop/part2/broken-authentication.html#log-in-with-chris-erased-user-account'
+  key: ghostLoginChallenge
+
+ name: 'Login Jim' -login 
+  category: 'Injection'
+  description: 'Log in with Jim''s user account.'
+  difficulty: 3
+  hint: 'Try cracking Jim''s password hash if you harvested it already. Alternatively, if you know Jim''s email address, try SQL Injection.'
+  hintUrl: 'https://pwning.owasp-juice.shop/part2/injection.html#log-in-with-jims-user-account'
+  key: loginJimChallenge
+
+ name: 'Frontend Typosquatting' contactspec
+  category: 'Vulnerable Components'
+  description: '<a href="/#/contact">Inform the shop</a> about a <i>typosquatting</i> imposter that dug itself deep into the frontend. (Mention the exact name of the culprit)'
+  difficulty: 5
+  hint: 'This challenge has nothing to do with mistyping web domains. There is no conveniently misplaced file helping you with this one either. Or is there?'
+  hintUrl: 'https://pwning.owasp-juice.shop/part2/vulnerable-components.html#inform-the-shop-about-a-typosquatting-imposter-that-dug-itself-deep-into-the-frontend'
+  key: typosquattingAngularChallenge
+
+
+ 
