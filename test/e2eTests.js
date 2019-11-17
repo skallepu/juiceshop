@@ -2,7 +2,7 @@ const spawn = require('cross-spawn')
 const colors = require('colors/safe')
 const server = require('./../server.js')
 
-server.start(() => {
+//server.start(() => {
   const protractor = spawn('protractor', ['protractor.conf.js'])
   function logToConsole (data) {
     console.log(String(data))
@@ -13,6 +13,6 @@ server.start(() => {
 
   protractor.on('exit', exitCode => {
     console.log('Protractor exited with code ' + exitCode + ' (' + (exitCode === 0 ? colors.green('SUCCESS') : colors.red('FAILED')) + ')')
-    server.close(exitCode)
+   //server.close(exitCode)
   })
-})
+//})
